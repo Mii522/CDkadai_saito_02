@@ -30,6 +30,7 @@
     margin-bottom: 20px;
 }
 
+html,
 header,
 h1,
 ul,
@@ -44,18 +45,16 @@ li {
 
 header {
     max-width: 960px;
-    height: 80px;
+    padding: 30px 0;
     margin: 0 auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
 
 ul {
-    margin-left: 180px;
     display: flex;
-    justify-content: flex-end;
     list-style: none;
 }
 
@@ -69,27 +68,24 @@ li+li {
 }
 
 @media screen and (max-width:767px) {
-    .header_bg {
+    header {
         display: block;
     }
 
-    .header_lists {
+    ul {
         width: 100%;
-        line-height: 50px;
         margin: 0;
         display: inline-block;
     }
 
-    .list1,
-    .list2,
-    .list3,
-    .list4,
-    .list5 {
+    li+li {
+        border-left: none;
+        padding: 10px 0;
+    }
+
+    li {
         margin: 0;
-        padding-left: 0;
-        padding-top: 10px;
-        padding-right: auto;
-        padding-bottom: 10px;
+        padding: 10px 0;
         border-bottom: 1px solid #000;
     }
 
